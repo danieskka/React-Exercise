@@ -1,7 +1,15 @@
-import React from "react";
+import "./Item.css"
 
-const Item = () => {
-  return <div>Item</div>;
+const ToDoItem = ({begin,ongoing,conclusion,end,deleteItem}) => {
+  return (
+    <ul>
+      <li>Empezamos con la siguiente tarea: {begin}</li>
+      <li>Luego deberemos: {ongoing}</li>
+      <li>En conclusion haremos: {conclusion}</li>
+      <li>Para finalizar se deberá: {end}</li>
+      <button onClick={deleteItem}>Delete Task</button>
+    </ul>
+  )
 };
 
-export default Item;
+export default ToDoItem;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const  Home = () => {
+const Home = () => {
 
     const [value, setValue] = useState({
       text: ''
