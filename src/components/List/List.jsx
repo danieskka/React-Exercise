@@ -1,13 +1,15 @@
 import { useState } from "react";
 import ToDoItem from '../List/Item/Item';
 import data from './data';
+import { v4 as uuidv4 } from "uuid";
+import './List.css';
 
 const ToDoList = () => {
   
   const [toDo, setList] = useState(data);
 
   const paintItems = () => toDo.map((item, i) => <ToDoItem 
-  begin={item.begin} ongoing={item.ongoing} conclusion={item.conclusion} end={item.end} key={i} deleteItem = { () => deleteItem(i)}/>)
+  begin={item.begin} ongoing={item.ongoing} conclusion={item.conclusion} end={item.end} key={uuidv4()} deleteItem = { () => deleteItem(i)}/>)
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -65,7 +67,7 @@ const ToDoList = () => {
           <label htmlFor="text">Fourth Task</label><br />
           <input type="text" name="end"/><br />
       
-          <button type="submit">Create To Do List</button>
+          <button type="submit">ADD</button>
 
 
         </form>
