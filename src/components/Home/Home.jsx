@@ -17,12 +17,14 @@ const Home = () => {
 
   return (
       <>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="text">Escribe algo</label>
-          <input name ="text" type="text" onChange={handleChange}></input>
-          <br/>
-          <button>ADD</button>
-        </form>
+        <section>
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="text">Escribe algo</label>
+            <input name ="text" type="text" onChange={handleChange}></input>
+            <br/>
+            <button>ADD</button>
+          </form>
+        </section>
         <p>{JSON.stringify(value)}</p>
       </>
   )
