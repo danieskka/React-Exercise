@@ -8,7 +8,7 @@ Teneis 2 opciones para poder visualizar el ejercicio:
 
 1. La mas sencilla es que puedas ver la funcionalidad del proyecto a través del siguiente enlace el cual te llevará al despliegue que realice en Netlify y puedas navegar directamente sin necesidad de instalar nada:
 
-https://64a428982e01a0133a674911--iridescent-gingersnap-a1a4ad.netlify.app/
+https://main--funny-blini-f3366e.netlify.app/
 
 2. Si deseas clonarte el repositorio y realizar tu mism@ pruebas e instalartelo en tu ordenador, puedes seguir los siguientes pasos:
 
